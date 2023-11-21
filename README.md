@@ -4,18 +4,18 @@ Uma loja de e-commerce entrou em contato solicitando um banco de dados para gere
 # Criação do banco de dados de um ecommerce de jogos online 🎮
 
 ## Entidades:
-Cliente;
-Pedido;
-Lojista;
-Produto;
-Vendedor;
+Cliente;<br>
+Pedido;<br>
+Lojista;<br>
+Produto;<br>
+Vendedor;<br>
 
 ## Atributos:
-Cliente (CPF, Data de Nascimento, E-mail, Telefone, Endereço);
-Pedido (Data da compra, Previsão de Entrega);
-Lojista (SellerID, CNPJ, E-mail, Telefone, Endereço, Nicho)
-Produto (SKU, Dimensões, EAN, Preço, Estoque)
-Vendedor (ID, Data de Nascimento, E-mail, Telefone, Endereço, Vendas)
+Cliente (CPF, Data de Nascimento, E-mail, Telefone, Endereço);<br>
+Pedido (Data da compra, Previsão de Entrega);<br>
+Lojista (SellerID, CNPJ, E-mail, Telefone, Endereço, Nicho)<br>
+Produto (SKU, Dimensões, EAN, Preço, Estoque)<br>
+Vendedor (ID, Data de Nascimento, E-mail, Telefone, Endereço, Vendas)<br>
 
 
 
