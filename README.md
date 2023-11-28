@@ -17,7 +17,7 @@ Funcionário (ID, Data de Nascimento, E-mail, Telefone, Endereço)<br>
 Armário (Data de ocupação, armarioID)<br>
 Cliente (CPF, Idade, E-mail, Telefone, Endereço);<br>
 
-#D.E.R (Diagrama Entidade Relacionamento)
+# D.E.R (Diagrama Entidade Relacionamento)
 ![image](https://github.com/victorsoaresho/Prova-Final-Modelagem-Banco-De_Dados/assets/136899628/bb8db5e9-3dd1-4b06-a7e1-75b0d902a407)
 
 
