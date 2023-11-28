@@ -11,7 +11,7 @@ Produto;<br>
 Vendedor;<br>
 
 ## Atributos:
-Cliente (CPF, Data de Nascimento, E-mail, Telefone, Endereço);<br>
+Cliente (CPF, Idade, E-mail, Telefone, Endereço);<br>
 Pedido (Data da compra, Previsão de Entrega);<br>
 Lojista (SellerID, CNPJ, E-mail, Telefone, Endereço, Nicho)<br>
 Produto (SKU, Dimensões, EAN, Preço, Estoque)<br>
