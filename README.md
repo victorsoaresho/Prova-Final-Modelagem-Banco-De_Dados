@@ -1,21 +1,25 @@
 # Prova-Final-Modelagem-Banco-De_Dados 💻 
-Uma loja de e-commerce entrou em contato solicitando um banco de dados para gerenciar suas vendas online, o sistema precisa registrar as informações dos clientes, lojistas, produtos, vendedores e pedidos. O SGBD escolhido será o MySQL por conta de outros sistemas da própria empresa.
+Um comercio local entrou em contato solicitando a criação de um sistema para gestão de estoque, pedidos e funcionários. Lembrando que cada funcionário possui um armário, os armários não são compartilhados e, um pedido pode ter mais de um funcionário. O sistema deve ser feito com MySQL. 
 
 # Criação do banco de dados de um ecommerce de jogos online 🎮
 
 ## Entidades:
-Cliente;<br>
-Pedido;<br>
-Lojista;<br>
 Produto;<br>
-Vendedor;<br>
+Pedido;<br>
+Funcionário;<br>
+Armário;<br>
+Cliente;<br>
 
 ## Atributos:
-Cliente (CPF, Idade, E-mail, Telefone, Endereço);<br>
-Pedido (Data da compra, Previsão de Entrega);<br>
-Lojista (SellerID, CNPJ, E-mail, Telefone, Endereço, Nicho)<br>
 Produto (SKU, Dimensões, EAN, Preço, Estoque)<br>
-Vendedor (ID, Data de Nascimento, E-mail, Telefone, Endereço, Vendas)<br>
+Pedido (Data da compra, Previsão de Entrega, pedidoID);<br>
+Funcionário (ID, Data de Nascimento, E-mail, Telefone, Endereço)<br>
+Armário (Data de ocupação, armarioID)<br>
+Cliente (CPF, Idade, E-mail, Telefone, Endereço);<br>
+
+#D.E.R (Diagrama Entidade Relacionamento)
+![image](https://github.com/victorsoaresho/Prova-Final-Modelagem-Banco-De_Dados/assets/136899628/bb8db5e9-3dd1-4b06-a7e1-75b0d902a407)
+
 
 
 
