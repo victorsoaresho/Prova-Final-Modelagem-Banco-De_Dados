@@ -1,26 +1,19 @@
-SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
-SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
-ALTER SCHEMA `comercial sistema`  DEFAULT CHARACTER SET utf8  DEFAULT COLLATE utf8_general_ci ;
+CREATE DATABASE comercial_sistema;
+USE comercial_sistema;
 
-CREATE DATABASE comercial sistema;
-USE comercial sistema;
-
-CREATE TABLE IF NOT EXISTS `comercial sistema`.`funcionario` (
+CREATE TABLE IF NOT EXISTS `comercial_sistema`.`funcionario` (
   `funcioID` INT(11) NOT NULL AUTO_INCREMENT,
   `DataNascimento` DATE NOT NULL,
   `Rua` VARCHAR(45) NOT NULL,
   `Cidade` VARCHAR(45) NOT NULL,
   `Bairro` VARCHAR(45) NOT NULL,
-  `Telefone` VARCHAR(45) GENERATED ALWAYS AS () VIRTUAL,
-  `Email` VARCHAR(45) GENERATED ALWAYS AS () VIRTUAL,
+  `Telefone` VARCHAR(45),
+  `Email` VARCHAR(45),
   PRIMARY KEY (`funcioID`),
-  UNIQUE INDEX `funcioID_UNIQUE` (`funcioID` ASC) VISIBLE)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
-
-CREATE TABLE IF NOT EXISTS `comercial sistema`.`Armario` (
+  UNIQUE INDEX `funcioID_UNIQUE` (`funcioID` ASC) VISIBLE);
+  
+CREATE TABLE IF NOT EXISTS `comercial_sistema`.`Armario` (
   `armarioID` INT(11) NOT NULL AUTO_INCREMENT,
   `DataOcupacao` VARCHAR(45) NOT NULL,
   `Funcionario_funcioID` INT(11) NOT NULL,
@@ -28,13 +21,11 @@ CREATE TABLE IF NOT EXISTS `comercial sistema`.`Armario` (
   INDEX `fk_Armário_Funcionário1_idx` (`Funcionario_funcioID` ASC) VISIBLE,
   CONSTRAINT `fk_Armário_Funcionário1`
     FOREIGN KEY (`Funcionario_funcioID`)
-    REFERENCES `comercial sistema`.`funcionario` (`funcioID`)
+    REFERENCES `comercial_sistema`.`funcionario` (`funcioID`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
+    ON UPDATE NO ACTION);
 
-CREATE TABLE IF NOT EXISTS `comercial sistema`.`Cliente` (
+CREATE TABLE IF NOT EXISTS `comercial_sistema`.`Cliente` (
   `CPF` INT(11) NOT NULL,
   `DataNascimentoCliente` DATE NOT NULL,
   `E-mail` VARCHAR(45) NOT NULL,
@@ -49,11 +40,9 @@ CREATE TABLE IF NOT EXISTS `comercial sistema`.`Cliente` (
     FOREIGN KEY (`Pedido_pedidoID`)
     REFERENCES `comercial sistema`.`Pedido` (`pedidoID`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
+    ON UPDATE NO ACTION);
 
-CREATE TABLE IF NOT EXISTS `comercial sistema`.`Pedido` (
+CREATE TABLE IF NOT EXISTS `comercial_sistema`.`Pedido` (
   `pedidoID` INT(11) NOT NULL AUTO_INCREMENT,
   `DataCompra` DATE NOT NULL,
   `PrevisaoEntrega` VARCHAR(45) NOT NULL,
@@ -71,11 +60,9 @@ CREATE TABLE IF NOT EXISTS `comercial sistema`.`Pedido` (
     FOREIGN KEY (`clienteID`)
     REFERENCES `comercial sistema`.`Cliente` (`CPF`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
+    ON UPDATE NO ACTION);
 
-CREATE TABLE IF NOT EXISTS `comercial sistema`.`Produto` (
+CREATE TABLE IF NOT EXISTS `comercial_sistema`.`Produto` (
   `SKU` VARCHAR(50) NOT NULL,
   `EAN` INT(11) NOT NULL,
   `Estoque` INT(11) NOT NULL,
@@ -83,11 +70,9 @@ CREATE TABLE IF NOT EXISTS `comercial sistema`.`Produto` (
   `Largura` FLOAT(11) NOT NULL,
   `Comprimento` FLOAT(11) NOT NULL,
   `Preço` FLOAT(11) NOT NULL,
-  PRIMARY KEY (`SKU`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
+  PRIMARY KEY (`SKU`));
 
-CREATE TABLE IF NOT EXISTS `comercial sistema`.`Funcionario_has_Cliente` (
+CREATE TABLE IF NOT EXISTS `comercial_sistema`.`Funcionario_has_Cliente` (
   `Funcionario_funcioID` INT(11) NOT NULL,
   `Cliente_CPF` INT(11) NOT NULL,
   PRIMARY KEY (`Funcionario_funcioID`, `Cliente_CPF`),
@@ -95,18 +80,13 @@ CREATE TABLE IF NOT EXISTS `comercial sistema`.`Funcionario_has_Cliente` (
   INDEX `fk_Funcionário_has_Cliente_Funcionário1_idx` (`Funcionario_funcioID` ASC) VISIBLE,
   CONSTRAINT `fk_Funcionário_has_Cliente_Funcionário1`
     FOREIGN KEY (`Funcionario_funcioID`)
-    REFERENCES `comercial sistema`.`funcionario` (`funcioID`)
+    REFERENCES `comercial_sistema`.`funcionario` (`funcioID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Funcionário_has_Cliente_Cliente1`
     FOREIGN KEY (`Cliente_CPF`)
     REFERENCES `comercial sistema`.`Cliente` (`CPF`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
+    ON UPDATE NO ACTION);
 
 
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
