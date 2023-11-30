@@ -1,7 +1,7 @@
 # Prova-Final-Modelagem-Banco-De_Dados 💻 
 Um comercio local entrou em contato solicitando a criação de um sistema para gestão de estoque, pedidos e funcionários. Lembrando que, cada funcionário possui um armário, os armários não são compartilhados e, um pedido pode ter mais de um funcionário. O sistema deve ser feito com MySQL. 
 
-# Criação do banco de dados de um ecommerce de jogos online 🎮
+# Criação do banco de dados 
 
 ## Entidades:
 Produto;<br>
