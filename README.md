@@ -20,6 +20,10 @@ Cliente (CPF, Idade, E-mail, Telefone, Endereço);<br>
 # D.E.R (Diagrama Entidade Relacionamento)
 ![image](https://github.com/victorsoaresho/Prova-Final-Modelagem-Banco-De_Dados/assets/136899628/bb8db5e9-3dd1-4b06-a7e1-75b0d902a407)
 
+# Modelo Lógico
+![Captura de Tela (9)](https://github.com/victorsoaresho/Prova-Final-Modelagem-Banco-De_Dados/assets/136899628/a78f63d5-dc1e-4ea0-b0c0-afa395a65ca9)
+
+
 
 
 
