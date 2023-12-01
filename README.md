@@ -29,4 +29,4 @@ Criando os dados: https://github.com/victorsoaresho/Prova-Final-Modelagem-Banco-
 CRUD: https://github.com/victorsoaresho/Prova-Final-Modelagem-Banco-De_Dados/blob/main/CRUD
 
 # Relatórios
-
+Link dos relatórios: https://github.com/victorsoaresho/Prova-Final-Modelagem-Banco-De_Dados/blob/main/Relatorios
