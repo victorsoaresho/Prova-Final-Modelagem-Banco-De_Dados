@@ -1,0 +1,49 @@
+## Relatórios:
+1-SELECT * FROM armario;
+https://drive.google.com/file/d/1PuotEnZ0pgHI5VdqnUNnE6AHVBeyUAk-/view?usp=sharing
+https://drive.google.com/file/d/18xBRU1v0p1FX-e3ihgn5Xa03kL1x-wAL/view?usp=sharing
+https://drive.google.com/file/d/1sH167yUiGd3br587uapuxnJGUHIMNi3p/view?usp=sharing
+https://drive.google.com/file/d/1RWHcR3DBhFpvQfAg7Hw4YW3JaJFY11Ra/view?usp=sharing
+
+2-SELECT * FROM cliente;
+https://drive.google.com/file/d/1HY5JN_M-p_0UmyoB8trQFDnfKbKEH20T/view?usp=sharing 
+https://drive.google.com/file/d/1PWSq_TnJe8Gcb7G3zRo_Njfeter1jOsd/view?usp=sharing 
+https://drive.google.com/file/d/1mS53Xs3BV84ropV2A44YsQzt1zUr-yJw/view?usp=sharing 
+https://drive.google.com/file/d/1xohKHzGDz3IP5ptxtUktp47CIhKqpGLI/view?usp=sharing
+
+3-SELECT * FROM funcionario;
+https://drive.google.com/file/d/1K4mAPJWBU7r8pZqtuAJPlorpGNzrBKKe/view?usp=sharing, 
+https://drive.google.com/file/d/1UV_Gq6PatTTIuxGkkgNp6FgpnfEMosdt/view?usp=sharing, 
+https://drive.google.com/file/d/1aeIQVbOsSmfl2MhaJ2qgw3vcYT6xYPrd/view?usp=sharing, 
+https://drive.google.com/file/d/1yGdkoH6SS6nAlyak-9IdauQ-qzER-iDE/view?usp=sharing
+
+4-SELECT * FROM comercial_sistema.funcionario_has_cliente;
+https://drive.google.com/file/d/1741Tg5Ydo_MylIyoo9XwUDzDpxwyUaX2/view?usp=sharing, 
+https://drive.google.com/file/d/1HqckIT2jFOmC7tdZJ-N-WmjNXHiiNKL0/view?usp=sharing, 
+https://drive.google.com/file/d/1h2LpOfjFtg8rr-vtEpokrNdZqqVtG-rD/view?usp=sharing, 
+https://drive.google.com/file/d/1z5Do3KI_4D6rOyjZye6vIYDn9PMR1phi/view?usp=sharing
+
+5-SELECT * FROM pedido;
+https://drive.google.com/file/d/12x2qp-e7olOs63IyGBiL_oZXXfkcQrNV/view?usp=sharing, 
+https://drive.google.com/file/d/1TeS7UVbvC-7g9qstNK2SOcqkHjCe3LCL/view?usp=sharing, 
+https://drive.google.com/file/d/1iBwyAIBRxASGe0cUiZP7FU9l8eRsc2xc/view?usp=sharing, 
+https://drive.google.com/file/d/1l3wJlSChZ1NiYhA9Y1XOObm1yZb8Sebp/view?usp=sharing
+
+6-SELECT * FROM produto;
+https://drive.google.com/file/d/1YLjEy0iFFe8y0qEnXUHF87iAjpdHH0bR/view?usp=sharing, 
+https://drive.google.com/file/d/1_HSifC9AseuL6RIjSOnFQhD3VTTKC0Jc/view?usp=sharing, 
+https://drive.google.com/file/d/1b7bwDlT-5HNnHHhvbSB4VIEefplPIx7n/view?usp=sharing, 
+https://drive.google.com/file/d/1rGnmgnQm6KxSmDMJEAjKIuczGI2SRprB/view?usp=sharing
+
+7-SELECT * FROM armario WHERE DataOcupacao = '2023-01-04';
+https://drive.google.com/file/d/1YN3_kTXcP4xwtd5a_KnGhuoIWyXlTCoF/view?usp=sharing
+
+8-SELECT * FROM armario WHERE DataOcupacao = '2023-01-07';
+https://drive.google.com/file/d/1i5va5ijrvccdLYEQgf7-Xj5bfxtpB5r5/view?usp=sharing
+
+9-SELECT * FROM funcionario WHERE Cidade = 'curupura';
+https://drive.google.com/file/d/1hlKN1cWDDXXle67nRUYab3oJOue6l1Kf/view?usp=sharing
+
+10-SELECT * FROM funcionario WHERE Cidade = 'zezinho';
+https://drive.google.com/file/d/1_4L0zJSG7NOk6xiqIGBFBpaE_LY8EWd5/view?usp=sharing
+
