@@ -1,4 +1,28 @@
-Inserção de dados:
+## Inserção de dados:
 INSERT INTO comercial_sistema.cliente VALUES (21, '2002-12-24', 'victorsoaresho@gmail.com', '16788758491', 'engenheiro', 'portinari', 'franca', 21);
 
 Imagem: 
+https://drive.google.com/file/d/18JvC08PdT8Dj4Gk82bR56-0eEvjqovCA/view?usp=drive_link
+
+## Leitura de dados: 
+SELECT * FROM comercial_sistema.cliente;
+
+Imagem 2:
+https://drive.google.com/file/d/1SQ1kLxXwQGNKTb03Eey3u6Th18xSPrnX/view?usp=sharing
+
+## Deleção:
+DELETE FROM comercial_sistema.cliente WHERE CPF = 21;
+
+Imagem 3:
+https://drive.google.com/file/d/1wALcSOMRgpYcKyUQw_X6RRhJaJbb8mWE/view?usp=sharing
+
+## Alteração de dados:
+UPDATE comercial_sistema.cliente SET Cidade = 'uberaba' WHERE CPF = 20;
+
+Imagem 4:
+https://drive.google.com/file/d/10kqDH13WpAEmi1dQG2bZoihsjWljU_At/view?usp=sharing
+
+
+
+
+
