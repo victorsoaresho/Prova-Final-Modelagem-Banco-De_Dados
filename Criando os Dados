@@ -1,0 +1,155 @@
+USE comercial_sistema; 
+
+SELECT * FROM cliente;
+SELECT * FROM funcionario;
+SELECT * FROM produto;
+SELECT * FROM pedido;
+SELECT *FROM comercial_sistema.funcionario_has_cliente;
+
+INSERT INTO comercial_sistema.produto VALUES ('A001', 44765, 2, 77, 77, 77, 30);
+INSERT INTO comercial_sistema.produto VALUES ('A002', 44800, 2, 77, 77, 77, 30);
+INSERT INTO comercial_sistema.produto VALUES ('A003', 44801, 2, 77, 77, 77, 30);
+INSERT INTO comercial_sistema.produto VALUES ('A004', 44802, 2, 77, 77, 77, 30);
+INSERT INTO comercial_sistema.produto VALUES ('A005', 44803, 2, 77, 77, 77, 30);
+ 
+ INSERT INTO comercial_sistema.produto VALUES ('A006', 44804, 2, 77, 77, 77, 30);
+ INSERT INTO comercial_sistema.produto VALUES ('A007', 44805, 2, 77, 77, 77, 30);
+ INSERT INTO comercial_sistema.produto VALUES ('A008', 44806, 2, 77, 77, 77, 30);
+ INSERT INTO comercial_sistema.produto VALUES ('A009', 44807, 2, 77, 77, 77, 30);
+ INSERT INTO comercial_sistema.produto VALUES ('A0010', 44808, 2, 77, 77, 77, 30);
+ 
+ INSERT INTO comercial_sistema.produto VALUES ('A0011', 44809, 2, 77, 77, 77, 30);
+ INSERT INTO comercial_sistema.produto VALUES ('A0012', 44810, 2, 77, 77, 77, 30);
+ INSERT INTO comercial_sistema.produto VALUES ('A0013', 44811, 2, 77, 77, 77, 30);
+ INSERT INTO comercial_sistema.produto VALUES ('A0014', 44812, 2, 77, 77, 77, 30);
+ INSERT INTO comercial_sistema.produto VALUES ('A0015', 44813, 2, 77, 77, 77, 30);
+ 
+ INSERT INTO comercial_sistema.produto VALUES ('A0016', 44814, 2, 77, 77, 77, 30);
+ INSERT INTO comercial_sistema.produto VALUES ('A0017', 44815, 2, 77, 77, 77, 30);
+ INSERT INTO comercial_sistema.produto VALUES ('A0018', 44816, 2, 77, 77, 77, 30);
+ INSERT INTO comercial_sistema.produto VALUES ('A0019', 44817, 2, 77, 77, 77, 30);
+ INSERT INTO comercial_sistema.produto VALUES ('A0020', 44818, 2, 77, 77, 77, 30);
+ 
+ 
+INSERT INTO comercial_sistema.funcionario VALUES (1, '1990-01-01', 'engenhocas', 'curupura', 'franca', '776', 'dorival1@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (2, '1990-01-02', 'portunhas', 'curupura', 'franca', '786', 'dorival2@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (3, '1990-01-03', 'alemas', 'curupura', 'franca', '796', 'dorival3@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (4, '1990-01-04', 'algonhas', 'zezinho', 'franca', '706', 'dorival4@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (5, '1990-01-05', 'porto', 'zezinho', 'franca', '876', 'dorival5@gmail.com');
+
+INSERT INTO comercial_sistema.funcionario VALUES (6, '1990-01-06', 'alfenas', 'caberlandia', 'franca', '900', 'dorival6@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (7, '1990-01-07', 'alfenas', 'caberlandia', 'franca', '901', 'dorival7@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (8, '1990-01-08', 'berenice', 'albes', 'franca', '902', 'dorival8@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (9, '1990-01-09', 'berenice', 'albes', 'franca', '903', 'dorival9@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (10, '1990-01-10', 'portunhas', 'curupura', 'franca', '904', 'dorival10@gmail.com');
+
+INSERT INTO comercial_sistema.funcionario VALUES (11, '1990-01-11', 'cachorro', 'albes', 'franca', '905', 'dorival11@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (12, '1990-01-12', 'cachorro', 'albes', 'franca', '906', 'dorival12@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (13, '1990-01-13', 'cachorro', 'albes', 'franca', '907', 'dorival13@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (14, '1990-01-14', 'cachorro', 'albes', 'franca', '908', 'dorival14@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (15, '1990-01-15', 'cachorro', 'albes', 'franca', '909', 'dorival15@gmail.com');
+
+INSERT INTO comercial_sistema.funcionario VALUES (16, '1990-01-16', 'dorival', 'joinvile', 'franca', '100', 'dorival16@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (17, '1990-01-17', 'cleiton', 'joinvile', 'franca', '101', 'dorival17@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (18, '1990-01-18', 'cleber', 'joinvile', 'franca', '102', 'dorival18@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (19, '1990-01-19', 'roberto', 'jose', 'franca', '103', 'dorival19@gmail.com');
+INSERT INTO comercial_sistema.funcionario VALUES (20, '1990-01-20', 'douglas', 'jose', 'franca', '104', 'dorival20@gmail.com');
+
+
+INSERT   INTO comercial_sistema.cliente VALUES (1, '1900-01-23', '01@gmail.com', '101', 'doroteia', 'doroteia', 'franca', 1);
+INSERT   INTO comercial_sistema.cliente VALUES (2, '1900-01-1', '02@gmail.com', '102', 'alicia', 'portinari', 'franca', 2);
+INSERT   INTO comercial_sistema.cliente VALUES (3, '1900-01-2', '03@gmail.com', '103', 'alicia', 'portinari', 'franca', 3);
+INSERT   INTO comercial_sistema.cliente VALUES (4, '1900-01-3', '04@gmail.com', '104', 'doroteia', 'doroteia', 'franca', 4);
+INSERT   INTO comercial_sistema.cliente VALUES (5, '1900-01-4', '05@gmail.com', '105', 'doroteia', 'doroteia', 'franca', 5);
+
+INSERT   INTO comercial_sistema.cliente VALUES (6, '1900-01-5', '06@gmail.com', '106', 'cleiton', 'leporace', 'franca', 6);
+INSERT   INTO comercial_sistema.cliente VALUES (7, '1900-01-6', '07@gmail.com', '107', 'cleiton', 'leporace', 'franca', 7);
+INSERT   INTO comercial_sistema.cliente VALUES (8, '1900-01-7', '08@gmail.com', '108', 'jorge', 'doroteia', 'franca', 8);
+INSERT   INTO comercial_sistema.cliente VALUES (9, '1900-01-8', '09@gmail.com', '109', 'jorge', 'portinari', 'franca', 9);
+INSERT   INTO comercial_sistema.cliente VALUES (10, '1900-01-9', '10@gmail.com', '110', 'jorge', 'portinari', 'franca', 10);
+
+INSERT   INTO comercial_sistema.cliente VALUES (11, '1900-01-10', '11@gmail.com', '111', 'alicia', 'portinari', 'franca', 11);
+INSERT   INTO comercial_sistema.cliente VALUES (12, '1900-01-11', '12@gmail.com', '112', 'alicia', 'portinari', 'franca', 12);
+INSERT   INTO comercial_sistema.cliente VALUES (13, '1900-01-12', '13@gmail.com', '113', 'cleiton', 'doroteia', 'franca', 13);
+INSERT   INTO comercial_sistema.cliente VALUES (14, '1900-01-13', '14@gmail.com', '114', 'cleiton', 'doroteia', 'franca', 14);
+INSERT   INTO comercial_sistema.cliente VALUES (15, '1900-01-14', '15@gmail.com', '115', 'cleiton', 'doroteia', 'franca', 15);
+
+INSERT   INTO comercial_sistema.cliente VALUES (16, '1900-01-15', '16@gmail.com', '116', 'doroteia', 'doroteia', 'franca', 16);
+INSERT   INTO comercial_sistema.cliente VALUES (17, '1900-01-16', '17@gmail.com', '117', 'doroteia', 'doroteia', 'franca', 17);
+INSERT   INTO comercial_sistema.cliente VALUES (18, '1900-01-17', '18@gmail.com', '118', 'jorge', 'portinari', 'franca', 18);
+INSERT   INTO comercial_sistema.cliente VALUES (19, '1900-01-18', '19@gmail.com', '119', 'jorge', 'portinari', 'franca', 19);
+INSERT   INTO comercial_sistema.cliente VALUES (20, '1900-01-19', '20@gmail.com', '120', 'jorge', 'portinari', 'franca', 20);
+
+INSERT INTO comercial_sistema.pedido VALUES (1, '2023-01-01', '30/11/2023', 'A001', 1);
+INSERT INTO comercial_sistema.pedido VALUES (2, '2023-01-01', '30/11/2023', 'A002', 2);
+INSERT INTO comercial_sistema.pedido VALUES (3, '2023-01-01', '30/11/2023', 'A003', 3);
+INSERT INTO comercial_sistema.pedido VALUES (4, '2023-01-01', '30/11/2023', 'A004', 4);
+INSERT INTO comercial_sistema.pedido VALUES (5, '2023-01-01', '30/11/2023', 'A005', 5);
+
+INSERT INTO comercial_sistema.pedido VALUES (6, '2023-01-02', '1/12/2023', 'A006', 6);
+INSERT INTO comercial_sistema.pedido VALUES (7, '2023-01-02', '1/12/2023', 'A007', 7);
+INSERT INTO comercial_sistema.pedido VALUES (8, '2023-01-02', '1/12/2023', 'A008', 8);
+INSERT INTO comercial_sistema.pedido VALUES (9, '2023-01-02', '1/12/2023', 'A009', 9);
+INSERT INTO comercial_sistema.pedido VALUES (10, '2023-01-02', '1/12/2023', 'A0010', 10);
+
+INSERT INTO comercial_sistema.pedido VALUES (11, '2023-01-03', '2/12/2023', 'A0011', 11);
+INSERT INTO comercial_sistema.pedido VALUES (12, '2023-01-03', '2/12/2023', 'A0012', 12);
+INSERT INTO comercial_sistema.pedido VALUES (13, '2023-01-03', '2/12/2023', 'A0013', 13);
+INSERT INTO comercial_sistema.pedido VALUES (14, '2023-01-03', '2/12/2023', 'A0014', 14);
+INSERT INTO comercial_sistema.pedido VALUES (15, '2023-01-03', '2/12/2023', 'A0015', 15);
+
+INSERT INTO comercial_sistema.pedido VALUES (16, '2023-01-04', '3/12/2023', 'A0016', 16);
+INSERT INTO comercial_sistema.pedido VALUES (17, '2023-01-04', '3/12/2023', 'A0017', 17);
+INSERT INTO comercial_sistema.pedido VALUES (18, '2023-01-04', '3/12/2023', 'A0018', 18);
+INSERT INTO comercial_sistema.pedido VALUES (19, '2023-01-04', '3/12/2023', 'A0019', 19);
+INSERT INTO comercial_sistema.pedido VALUES (20, '2023-01-04', '3/12/2023', 'A0020', 20);
+
+armario //
+
+INSERT INTO  comercial_sistema.armario VALUES (1, '2023-01-04', 1);
+INSERT INTO  comercial_sistema.armario VALUES (2, '2023-01-04', 2);
+INSERT INTO  comercial_sistema.armario VALUES (3, '2023-01-04', 3);
+INSERT INTO  comercial_sistema.armario VALUES (4, '2023-01-04', 4);
+INSERT INTO  comercial_sistema.armario VALUES (5, '2023-01-04', 5);
+
+INSERT INTO  comercial_sistema.armario VALUES (6, '2023-01-05', 6);
+INSERT INTO  comercial_sistema.armario VALUES (7, '2023-01-05',7);
+INSERT INTO  comercial_sistema.armario VALUES (8, '2023-01-05', 8);
+INSERT INTO  comercial_sistema.armario VALUES (9, '2023-01-05', 9);
+INSERT INTO  comercial_sistema.armario VALUES (10, '2023-01-05', 10);
+
+INSERT INTO  comercial_sistema.armario VALUES (11, '2023-01-06', 11);
+INSERT INTO  comercial_sistema.armario VALUES (12, '2023-01-06', 12);
+INSERT INTO  comercial_sistema.armario VALUES (13, '2023-01-06', 13);
+INSERT INTO  comercial_sistema.armario VALUES (14, '2023-01-06', 14);
+INSERT INTO  comercial_sistema.armario VALUES (15, '2023-01-06', 15);
+
+INSERT INTO  comercial_sistema.armario VALUES (16, '2023-01-07', 16);
+INSERT INTO  comercial_sistema.armario VALUES (17, '2023-01-07', 17);
+INSERT INTO  comercial_sistema.armario VALUES (18, '2023-01-07', 18);
+INSERT INTO  comercial_sistema.armario VALUES (19, '2023-01-07', 19);
+INSERT INTO  comercial_sistema.armario VALUES (20, '2023-01-07', 20);
+
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (1, 1);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (2, 2);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (3, 3);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (4, 4);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (5, 5);
+
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (6, 6);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (7, 7);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (8, 8);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (9, 9);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (10, 10);
+
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (11, 11);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (12, 12);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (13, 13);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (14, 14);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (15, 15);
+
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (16, 16);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (17, 17);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (18, 18);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (19, 19);
+INSERT INTO comercial_sistema.funcionario_has_cliente VALUES (20, 20);
