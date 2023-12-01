@@ -1,0 +1,4 @@
+Inserção de dados:
+INSERT INTO comercial_sistema.cliente VALUES (21, '2002-12-24', 'victorsoaresho@gmail.com', '16788758491', 'engenheiro', 'portinari', 'franca', 21);
+
+Imagem: 
